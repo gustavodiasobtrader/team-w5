@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>WEB5 - Desenvolvimento Web e Mobile.</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+
+<span id="home"></span>
+<header >
+	<nav class="nav-bar">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#team">Our Team</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+	</nav>
+
+
+			<div class="hamburguer-menu"><div class="holder"></div></div>
+		
+
+</header>
+
+	<nav class="nav-mobile">
+		<ul class="nav-content">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#team">Our Team</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 first-section" style="text-align:center; margin:0 auto;">
+			<div class="text-content" style="text-align:center;">
+				<h1 style="width:391px;">WE CODE</h1>
+				<h1 style="width:475px;">WE CREATE</h1>
+				<h1 style="width:585px;">WE ARE <span style="color:rgba(255, 235, 59,1.0);">WEB5</span></h1></h1>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row second-section" id="services">
+	<h1>What We Do</h1>
+		
+			<div class="col-md-4 section-two-block">
+				<img src="icons/devices.png">
+				<p>We code your website, webapp or mobile app using the most trending technologies.Our team gotta skills for the most differents requirements.</p>
+			</div>
+
+			<div class="col-md-4 section-two-block">
+				<img src="icons/design-tool.png" style="width:127px">
+				<p>We create an amazing UX and layout for you. Our team is highly focused in improve an amazing interfaces!</p>
+			</div>
+
+			<div class="col-md-4 section-two-block">
+				<img src="icons/html.png">
+				<p>Everything we create is responsible. So, your system will be adopted and well-executed in every single type of plataform.</p>
+			</div>
+	</div>
+</div>
+
+
+
+
+<div class="container">
+	<div class="row third-section">
+		<div class="col-md-12 third-section-holder">
+			<div class="text-content-two" style="display:block; margin:0 auto; text-align:center;">
+				<h1 style="width:150px;">WE</h1>
+				<h1 style="width:350px;">PROVIDE</h1>
+				<h1 style="width:900px">AMAZING <span style="color:rgba(255, 235, 59,1.0);">EXPERIENCES</span></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container" id="team">
+	<div class="row fourth-section">
+		<h1>Meet our Jedis!</h1>
+		<div class="col-md-3 team-member-card member-01"><div class="bg-black"><p>Gustavo Dias <br> Front-End and UX</p></div></div>
+		<div class="col-md-3 team-member-card member-02"><div class="bg-black"><p>Leonardo Sabino <br> Back-End Developer</p></div></div>
+		<div class="col-md-3 team-member-card member-03"><div class="bg-black"><p>Jonatas Lopes <br> UI/UX Designer</p></div></div>
+		<div class="col-md-3 team-member-card member-04"><div class="bg-black"><p>Leonardo Santos <br> Mobile Developer</p></div></div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="row fifth-section" id="contact">
+		<h1>Let's <span style="color:yellow;">Talk</span> a Little Bit</h1>
+
+		<div class="col-md-6">
+
+
+		<form class="form-group" action="sendmail.php" method="POST">
+			<input type="text" name="nome" placeholder="Nome:">
+			<input type="email" name="e-mail" placeholder="E-mail:">
+			<input type="text" name="subject" placeholder="Assunto:">
+			<textarea placeholder="Mensagem:"></textarea>
+			<input type="submit" name="Enviar" id="send-button">
+		</form>
+
+		</div>
+
+
+
+		<div class="col-md-6">
+			
+			<div id="map"></div>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+
+   <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -24.0050237, lng: -46.412336},
+          scrollwheel: false,
+          zoom: 15
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc-qHIOblOK_A45Y8WtDstAuUXEDr0jrE&callback=initMap"
+    async defer></script>
+</body>
+</html>
